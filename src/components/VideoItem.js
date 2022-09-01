@@ -1,7 +1,12 @@
 import React from "react";
 
 const VideoItem = ({ video }) => {
-  return <div>VideoItem</div>;
+  return (
+    <div>
+      <img alt="youtube-vid" src={video.snippet.thumbnails.medium.url} />
+      {video.snippet.title}
+    </div>
+  );
 };
 
 export default VideoItem;
