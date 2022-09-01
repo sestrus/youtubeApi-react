@@ -6,7 +6,11 @@ class App extends React.Component {
   state = { videos: [] };
 
   render() {
-    return <div>App</div>;
+    return (
+      <div className="ui container">
+        <SearchBar />
+      </div>
+    );
   }
 }
 
